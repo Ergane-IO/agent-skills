@@ -1,0 +1,4 @@
+interface:
+  display_name: "Family Road Trip"
+  short_description: "Family trips, cheaper stays, points, maps and budgets"
+  default_prompt: "Use $family-road-trip to plan or update our road trip, compare cheaper stays across platforms and points options, and keep the shared map, itinerary, parking, food stops and budget in sync."

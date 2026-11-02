@@ -1,0 +1,35 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ergane-skills",
+  "version": "0.1.0",
+  "description": "Practical family travel planning with multi-platform price hunting, points, maps and budgets.",
+  "author": {
+    "name": "Ergane",
+    "url": "https://github.com/Ergane-IO"
+  },
+  "homepage": "https://github.com/Ergane-IO/agent-skills",
+  "repository": "https://github.com/Ergane-IO/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "travel",
+    "road-trip",
+    "family",
+    "points",
+    "price-comparison"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Ergane Skills",
+        "shortDescription": "Family travel, cheaper stays, points, maps and budgets",
+        "longDescription": "Plan family road trips, compare accommodation across cash and points platforms, verify parking, and maintain shared maps, itineraries and budgets.",
+        "developerName": "Ergane",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/Ergane-IO/agent-skills",
+        "defaultPrompt": [
+          "Plan our family road trip and compare cash and points options for suitable stays."
+        ]
+      }
+    }
+  }
+}

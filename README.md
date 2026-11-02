@@ -10,6 +10,7 @@ Reusable agent skills for practical planning. The first skill is **Family Road T
 - Verify room layouts, ground-floor/access requests, pickup/large-vehicle parking, garage limits, overnight rules and extra fees.
 - Create or update shared maps with directions, parking, optional stops, restaurants, transit and walking loops; maintain translated itineraries when requested.
 - Track refundable rates, cancellation deadlines, paid versus due amounts, cash and points, and changes across the whole plan.
+- Work through park entry versus tour reservations, pass coverage, maximum parking stays, vehicle details, construction/access replies and self-check-in tasks. Keep one private checklist for reservations across platforms.
 
 This is an instruction package for a capable agent, not a hotel booking engine. Live prices, account-specific points offers, map editing and bookings depend on the tools and accounts available to that agent. It does not include credentials, a hosted service or a background price monitor. Research does not authorize payment, external messages or publishing private trip details.
 
@@ -18,10 +19,10 @@ This is an instruction package for a capable agent, not a hotel booking engine. 
 Paste this into a Codex chat:
 
 ```text
-$skill-installer install https://github.com/Ergane-IO/agent-skills/tree/v0.1.0/skills/family-road-trip
+$skill-installer install https://github.com/Ergane-IO/agent-skills/tree/v0.2.0/skills/family-road-trip
 ```
 
-The tagged link installs a known version. For the current development version, replace `v0.1.0` with `main`. If the skill does not appear after installation, restart the client. Updating an existing installation may require replacing it through the installer; do not install duplicate copies with the same name.
+The tagged link installs a known version. For the current development version, replace `v0.2.0` with `main`. If the skill does not appear after installation, restart the client. Updating an existing installation may require replacing it through the installer; do not install duplicate copies with the same name.
 
 Then ask:
 
@@ -39,7 +40,7 @@ Provide dates, starting point, return deadline, travelers/ages, vehicle, comfort
 For Codex versions supporting plugin marketplace commands:
 
 ```sh
-codex plugin marketplace add Ergane-IO/agent-skills --ref v0.1.0
+codex plugin marketplace add Ergane-IO/agent-skills --ref v0.2.0
 codex plugin add ergane-skills@ergane
 ```
 
@@ -63,6 +64,7 @@ skills/family-road-trip/
   agents/openai.yaml
   references/
     price-hunting.md
+    on-the-ground-logistics.md
     maps-and-sharing.md
     reservations-and-budget.md
     trip-record.md

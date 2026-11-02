@@ -4,11 +4,11 @@ Use an existing maintained plan/ledger as the source of truth. If none exists an
 
 | Record | Useful fields |
 |---|---|
-| Trip | Dates/year, time zones, origin/return deadline, travelers/ages, vehicle configuration, comfort constraints, priorities, currency, cancellation preference |
+| Trip | Dates/year, time zones, origin/return deadline, travelers/ages at travel, vehicle configuration, comfort constraints, must-keep/optional/removed stops, currency, cancellation preference |
 | Day | Date, overnight, departure/arrival windows, driving versus elapsed time, breaks, core outing, optional/substitute stops, meals |
 | Stop | Stable ID, exact name/branch, address/coordinates, official source, duration/walking effort, hours/season, tickets, parking/transit, status |
 | Stay | Dates/nights, exact room/beds/occupancy, channel/link, access confirmation, parking, cash/points, due-property fees, payment status, cancellation terms |
-| Reservation | Linked stop/stay, quoted/prepared/booked/canceled status, private confirmation evidence, refund status, checked date |
+| Reservation | Linked stop/stay, provider/account/management link, quoted/prepared/booked/canceled status, private confirmation evidence, refund status, checked date, next action/owner/deadline |
 | Cost | Category, retained/removed item, actual/quote/estimate, cash/points, paid/due, included fees, optional/included, source/date |
 | Uncertainty | Question, consequence, pending evidence, fallback and recheck date |
 | Artifact | Existing map/doc/plan links, language, access level, last verified update |

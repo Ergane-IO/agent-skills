@@ -13,6 +13,7 @@ Build a trip the family can comfortably follow, then keep its itinerary, map, re
 - Identify the current source of truth and shared artifacts. Recover dates/year, origin and return deadline, travelers/children's ages, beds and rooms, vehicle configuration, budget/points, and priorities. Ask only for missing information that changes the decision; continue independent research while waiting.
 - Separate confirmed facts, current quotes, estimates, requests awaiting confirmation, optional choices and canceled items. Record sources and checked dates for material restrictions and prices.
 - Do not carry a previous trip's health/access needs, vehicle, dates, cancellation preferences or loyalty balances into a new trip without confirming they still apply.
+- Keep a short list of must-keep, optional and explicitly removed stops. Clarify ambiguous changes such as "leave a day earlier" before changing dependent bookings; keep working on unaffected tasks.
 
 ## Shape the route around the people
 
@@ -29,12 +30,17 @@ Build a trip the family can comfortably follow, then keep its itinerary, map, re
 - When comparing prices, include suitable direct hotel rates, cash aggregators, rentals and the user's points portal. Compare identical dates, occupancy, beds, taxes, mandatory fees and cancellation conditions.
 - Verify exact room categories: beds, bedrooms versus sleeping areas, bathrooms, elevator/stairs and ground-floor guarantees. A special request is not confirmation.
 - Check the actual vehicle against garage clearance, ramps, length/width, oversized fees, overnight permissions, in/out rules and space guarantees. Model name alone may not establish dimensions; cab/bed, modifications and roof equipment matter. Seek a verified surface-lot fallback where useful.
+- When choosing between family vehicles, compare usable seating with child seats, luggage, ride/access comfort, realistic fuel use and parking constraints over the whole route. The cheapest fuel estimate alone does not determine the better choice.
 - Choose meals on the actual route or a comfortable hotel walk: a practical travel lunch, pleasant dinner and backup where warranted. Verify the exact branch, hours for the visit date, price level, noise, family suitability and parking. Avoid detours that jeopardize timed entry.
 - Compare walking, public transit, free trolleys/shuttles, taxi/rideshare with suitable child seating, and driving plus parking. Verify direction, boarding/return stops, fares, operating hours and door-to-door time.
 
 ## Hunt for better prices and useful redemptions
 
 Treat savings research as part of a full lodging search, not an optional check of one website. Read [price-hunting.md](references/price-hunting.md) for multi-platform search, discounted rates, points strategies and the comparison table. Search suitable direct rates, independent cash channels, rentals and eligible points channels; report any channel that could not be checked. Compare the cheapest acceptable cash option with points and mixed-payment options on equivalent terms. Recommend saving points when the redemption is weak. Optimize the whole stay's cost, room suitability and daily logistics; do not trade away the user's cancellation or comfort requirements for a headline discount.
+
+## Turn choices into arrival-ready logistics
+
+Read [on-the-ground-logistics.md](references/on-the-ground-logistics.md) when checking parks, attraction reservations, passes, parking, property replies or pre-arrival tasks. Work through the actual admission and arrival process: the right park entrance, vehicle entry versus tour tickets, parking location and duration, check-in time, access and remaining actions. Explain which reservations are necessary, useful or unnecessary; do not reserve everything by default. Pair unresolved details with a fallback or a specific recheck.
 
 ## Maintain the deliverables
 
@@ -52,6 +58,7 @@ Use formats and destinations the user already chose. A shared document suits a r
 - For a date/base change, check every affected overnight, attraction, route, parking plan, meal stop, cancellation deadline and cost. Do not silently retain inconsistent dates.
 - Confirm replacement lodging before canceling the old stay unless instructed otherwise. Verify the displayed cancellation cost and final status. Resolve ambiguous checkout outcomes before retrying; avoid duplicate charges.
 - Keep quotes, prepared checkouts and requests distinct from completed reservations. Verify completion through a confirmation page, trip list or email.
+- Maintain a private booking checklist with provider/account links, dates, room or ticket, cash/points, paid/due amounts, cancellation deadlines and remaining actions. It should answer "where are all my reservations?" even when bookings span several platforms.
 - Book, cancel, send messages, publish/share or create reminders only within user authorization and tool requirements. Do not add redundant approval steps to already authorized work.
 - Suggest later rechecks for seasonal hours, launches, conditions, access, parking and deadlines. Create reminders only when requested, with year, local time zone, task and useful link.
 

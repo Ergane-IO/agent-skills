@@ -6,6 +6,8 @@ Use exact dates/year, nights, all travelers and children's ages. Verify maximum 
 
 For serious offers record channel/link, checked time, room, total with taxes/mandatory fees, due-now versus due-property amounts, parking, breakfast, payment timing and cancellation deadline/time zone/penalty. A refundable deposit and cancellation penalty are different facts.
 
+Give the user actionable booking links with dates and occupancy where supported, plus a written summary if the link is session-bound or loses its filters. For activities include local date/time, party/ticket types and arrival lead time. For lodging include check-in/out rather than an ambiguous date range. Keep private management links separate from shareable information links.
+
 For free cancellation verify refundability of taxes, processing/platform fees and deposits too. If terms are missing or contradictory, mark unresolved; do not book on an assumption. Recheck final checkout terms before committing.
 
 Confirm replacement lodging before canceling the old reservation when appropriate. Capture completed cancellation and expected refund separately; a pending refund is not received cash. After payment errors inspect trips/confirmation/email before retrying. Stop blind retries after repeated failure and use a supported alternative or handoff.
@@ -17,6 +19,7 @@ Confirm replacement lodging before canceling the old reservation when appropriat
 - Verify current balance, actual card/product redemption offers and eligibility. Do not assume a fixed Chase rate, expiration policy, transfer value or promotional boost.
 - Verify which cash charges qualify for a credit and whether points reduce that amount. Count each credit once; distinguish expected from posted and show the total without an uncertain credit.
 - Order booking steps around actual benefit rules and inventory risk; do not invent a required credit sequence. Preserve the user's cancellation requirement while they are deciding.
+- Distinguish the accommodation-only subtotal from total trip spending when asked. For a booking-order checklist, specify the platform, cash versus points, intended credit, and due-property charges on each step; an approved prior purchase may have consumed the available credit or points balance.
 - Before transferring points verify inventory, full charges and transfer terms; transfers may be irreversible. Do not transfer speculatively.
 
 ## One reconciled budget

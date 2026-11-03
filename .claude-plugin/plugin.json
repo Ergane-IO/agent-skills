@@ -1,0 +1,19 @@
+{
+  "name": "ergane-skills",
+  "version": "0.2.1",
+  "description": "Practical family travel planning with multi-platform price hunting, points, maps and budgets.",
+  "author": {
+    "name": "Ergane",
+    "url": "https://github.com/Ergane-IO"
+  },
+  "homepage": "https://github.com/Ergane-IO/agent-skills",
+  "repository": "https://github.com/Ergane-IO/agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "travel",
+    "road-trip",
+    "family",
+    "points",
+    "price-comparison"
+  ]
+}

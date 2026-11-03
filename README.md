@@ -19,10 +19,10 @@ This is an instruction package for a capable agent, not a hotel booking engine. 
 Paste this into a Codex chat:
 
 ```text
-$skill-installer install https://github.com/Ergane-IO/agent-skills/tree/v0.2.0/skills/family-road-trip
+$skill-installer install https://github.com/Ergane-IO/agent-skills/tree/v0.2.1/skills/family-road-trip
 ```
 
-The tagged link installs a known version. For the current development version, replace `v0.2.0` with `main`. If the skill does not appear after installation, restart the client. Updating an existing installation may require replacing it through the installer; do not install duplicate copies with the same name.
+The tagged link installs a known version. For the current development version, replace `v0.2.1` with `main`. If the skill does not appear after installation, restart the client. Updating an existing installation may require replacing it through the installer; do not install duplicate copies with the same name.
 
 Then ask:
 
@@ -40,7 +40,7 @@ Provide dates, starting point, return deadline, travelers/ages, vehicle, comfort
 For Codex versions supporting plugin marketplace commands:
 
 ```sh
-codex plugin marketplace add Ergane-IO/agent-skills --ref v0.2.0
+codex plugin marketplace add Ergane-IO/agent-skills --ref v0.2.1
 codex plugin add ergane-skills@ergane
 ```
 
@@ -48,9 +48,30 @@ The repository includes a portable `plugin.json` and a repo marketplace catalog.
 
 To follow ongoing releases, use `--ref main` instead of the tag and refresh with `codex plugin marketplace upgrade ergane`. For a pinned installation, choose a newer release tag explicitly. Install either the plugin or the standalone skill to avoid duplicate skill entries.
 
+## Install in Claude Desktop / Cowork
+
+In **Customize → Plugins → Add marketplace**, use:
+
+```text
+https://github.com/Ergane-IO/agent-skills
+```
+
+Sync the marketplace, then install **Ergane Skills** from it. The same repository now includes Claude's `.claude-plugin/marketplace.json` catalog and `.claude-plugin/plugin.json` manifest, using the same skill files as Codex. If you previously saw “no manifest found,” close and reopen Add marketplace and retry the same URL after this update.
+
+For a manual upload, download the Claude plugin ZIP from the [latest release](https://github.com/Ergane-IO/agent-skills/releases/latest). It contains `.claude-plugin/plugin.json` and `skills/` directly at the ZIP root. Organization-managed marketplaces can have additional account/repository restrictions; use the manual upload path if organization policy does not allow syncing this public repository.
+
+In Claude Code:
+
+```sh
+claude plugin marketplace add Ergane-IO/agent-skills
+claude plugin install ergane-skills@ergane
+```
+
+Then invoke `/ergane-skills:family-road-trip`, or ask Claude to use the Family Road Trip skill. Desktop and Code tool access differ: live map editing and logged-in travel portals still need a supported browser/account connection. The package does not bundle those services or credentials. It uses installed document/browser workflows when available and states when it can only prepare files or directions links.
+
 ## Download or use another compatible agent
 
-The [latest release](https://github.com/Ergane-IO/agent-skills/releases/latest) includes a standalone skill ZIP, a plugin ZIP and SHA-256 checksums. Extract the standalone ZIP into your agent's supported skills directory, keeping the entire `family-road-trip` folder and references together. Other agents need Agent Skills support and suitable tools; their installation paths and browser/connectors differ. Cross-client execution has not been verified.
+The [latest release](https://github.com/Ergane-IO/agent-skills/releases/latest) includes a standalone skill ZIP, a plugin ZIP and SHA-256 checksums. Extract the standalone ZIP into your agent's supported skills directory, keeping the entire `family-road-trip` folder and references together. Other agents need Agent Skills support and suitable tools; their installation paths and browser/connectors differ. Claude manifests and component discovery are validated with Claude Code; an actual Desktop marketplace sync and live travel workflow still require checking in the client.
 
 The skill follows the `SKILL.md` format. The optional `agents/openai.yaml` contains Codex presentation metadata. See [official skill documentation](https://learn.chatgpt.com/docs/build-skills) for local discovery and installation behavior.
 
@@ -59,6 +80,8 @@ The skill follows the `SKILL.md` format. The optional `agents/openai.yaml` conta
 ```text
 plugin.json
 .agents/plugins/marketplace.json
+.claude-plugin/plugin.json
+.claude-plugin/marketplace.json
 skills/family-road-trip/
   SKILL.md
   agents/openai.yaml
@@ -72,6 +95,6 @@ skills/family-road-trip/
 
 Keep workflows general and tool-adaptive. Do not commit real trip records, email addresses, account balances, payment details, confirmation codes, browser captures or private map/document links. Prices and policies belong in the active trip's evidence, not in the reusable skill.
 
-When adding skills, use `skills/<skill-name>/SKILL.md`, keep descriptions specific, and link substantial supporting references from the entrypoint. Bump `plugin.json` and publish a tagged release for distributed changes. Validate names/frontmatter, all local reference links, package contents and installation before calling a release ready. Behavioral scenarios are in [EVALUATION.md](EVALUATION.md).
+When adding skills, use `skills/<skill-name>/SKILL.md`, keep descriptions specific, and link substantial supporting references from the entrypoint. Keep versions in both plugin manifests and the Claude marketplace entry aligned, then publish a tagged release for distributed changes. Validate names/frontmatter, all local reference links, package contents and installation before calling a release ready. Behavioral scenarios are in [EVALUATION.md](EVALUATION.md).
 
 MIT licensed. No affiliation with the travel platforms named as examples.

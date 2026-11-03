@@ -1,0 +1,17 @@
+{
+  "name": "ergane",
+  "owner": {
+    "name": "Ergane"
+  },
+  "metadata": {
+    "description": "Reusable planning skills from Ergane"
+  },
+  "plugins": [
+    {
+      "name": "ergane-skills",
+      "source": "./",
+      "description": "Practical family travel planning with multi-platform price hunting, points, maps and budgets.",
+      "version": "0.2.1"
+    }
+  ]
+}
